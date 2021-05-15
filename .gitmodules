@@ -8,6 +8,6 @@
 [submodule "dotbot-plugins/dotbot_plugin_aptget"]
 	path = dotbot-plugins/dotbot_plugin_aptget
 	url = https://github.com/dein0s/dotbot_plugin_aptget.git
-[submodule "zsh/zplugin/bin"]
-	path = zsh/zplugin/bin
-	url = https://github.com/zdharma/zplugin.git
+[submodule "zsh/zinit/bin"]
+	path = zsh/zinit/bin
+	url = https://github.com/zdharma/zinit.git
