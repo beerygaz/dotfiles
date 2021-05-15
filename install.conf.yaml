@@ -6,7 +6,7 @@
 
 - link:
     ~/.zshrc: zsh/zshrc
-    ~/.zplugin: zsh/zplugin
+    ~/.zinit: zsh/zinit
     ~/.p10k.zsh: zsh/p10k.zsh
     
     # VS Code MacOS
