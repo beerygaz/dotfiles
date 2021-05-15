@@ -17,3 +17,6 @@
 [submodule "zsh/zsh/zplugin/bin"]
 	path = zsh/zsh/zplugin/bin
 	url = https://github.com/zdharma/zplugin.git
+[submodule "/home/gaz/.dotfiles/zsh/zplugin/bin"]
+	path = /home/gaz/.dotfiles/zsh/zplugin/bin
+	url = https://github.com/zdharma/zplugin.git
