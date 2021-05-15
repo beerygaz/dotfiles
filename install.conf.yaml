@@ -6,6 +6,7 @@
 
 - link:
     ~/.zshrc: zshrc
+    ~/.zplugin: zplugin
     
     # VS Code MacOS
     ~/Library/Application Support/Code/User:
