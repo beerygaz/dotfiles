@@ -2,6 +2,8 @@
 
 # Name
 git config --global user.name "Gavin Hill"
+git config --global credential.helper 'cache --timeout=10800'
+git config --global user.email 'gavin@highpeak.co.za'
 
 # Set git global settings
 git config --global push.default current
