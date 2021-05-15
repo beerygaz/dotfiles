@@ -28,3 +28,9 @@
     stdout: true
     quiet: false
 
+  - command: ./zsh/set-shell.sh
+    description: "Making zsh the default shell"
+    stdin: true
+    stderr: true
+    stdout: true
+
