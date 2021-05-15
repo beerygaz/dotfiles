@@ -8,3 +8,6 @@
 [submodule "dotbot-plugins/dotbot_plugin_aptget"]
 	path = dotbot-plugins/dotbot_plugin_aptget
 	url = https://github.com/dein0s/dotbot_plugin_aptget.git
+[submodule "zsh/powerlevel9k"]
+	path = zsh/powerlevel9k
+	url = https://github.com/bhilburn/powerlevel9k.git
