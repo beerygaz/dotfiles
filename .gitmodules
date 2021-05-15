@@ -8,15 +8,6 @@
 [submodule "dotbot-plugins/dotbot_plugin_aptget"]
 	path = dotbot-plugins/dotbot_plugin_aptget
 	url = https://github.com/dein0s/dotbot_plugin_aptget.git
-[submodule "zsh/powerlevel9k"]
-	path = zsh/powerlevel9k
-	url = https://github.com/bhilburn/powerlevel9k.git
-[submodule "zplugin/bin"]
-	path = zplugin/bin
-	url = https://github.com/zdharma/zplugin.git
-[submodule "zsh/zsh/zplugin/bin"]
-	path = zsh/zsh/zplugin/bin
-	url = https://github.com/zdharma/zplugin.git
-[submodule "/home/gaz/.dotfiles/zsh/zplugin/bin"]
-	path = /home/gaz/.dotfiles/zsh/zplugin/bin
+[submodule "zsh/zplugin/bin"]
+	path = zsh/zplugin/bin
 	url = https://github.com/zdharma/zplugin.git
