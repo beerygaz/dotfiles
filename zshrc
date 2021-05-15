@@ -11,3 +11,5 @@ zstyle :compinstall filename '/home/gaz/.zshrc'
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
+POWERLEVEL9K_MODE='nerdfont-complete'
+source  ~/.dotfiles/zsh/powerlevel9k/powerlevel9k.zsh-theme
