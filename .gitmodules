@@ -14,3 +14,6 @@
 [submodule "zplugin/bin"]
 	path = zplugin/bin
 	url = https://github.com/zdharma/zplugin.git
+[submodule "zsh/zsh/zplugin/bin"]
+	path = zsh/zsh/zplugin/bin
+	url = https://github.com/zdharma/zplugin.git
