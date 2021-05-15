@@ -11,3 +11,6 @@
 [submodule "zsh/powerlevel9k"]
 	path = zsh/powerlevel9k
 	url = https://github.com/bhilburn/powerlevel9k.git
+[submodule "zplugin/bin"]
+	path = zplugin/bin
+	url = https://github.com/zdharma/zplugin.git
