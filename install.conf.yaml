@@ -16,6 +16,13 @@
       path: vscode/macos/*.json
       force: true
 
+- link:
+    ~/.config/neofetch/config.conf:
+      path: neofetch/config.conf
+      create: true
+      force: true
+
+
 - create:
     - ~/downloads
     - ~/.vim/undo-history
