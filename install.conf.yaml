@@ -1,6 +1,8 @@
 - defaults:
     link:
       relink: true
+      create: true
+      force: true
 
 - clean: ['~']
 
@@ -10,6 +12,8 @@
     ~/.p10k.zsh: zsh/p10k.zsh
     ~/.tmux.conf: tmux/tmux.conf
     ~/.tmux.conf.local: tmux/tmux.conf.local
+    ~/.vim: vim
+    ~/.vimrc: vim/vimrc
 
     ~/.tmux/plugins: 
       path: tmux/plugins
