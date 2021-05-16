@@ -22,6 +22,7 @@ POWERLEVEL9K_MODE='nerdfont-complete'
 source ~/.zinit/bin/zinit.zsh
 source ~/.dotfiles/zsh/aliases.zsh
 
+EDITOR=vim
 
 #Log Zplugin Plugins
 zinit load zsh-users/zsh-autosuggestions
