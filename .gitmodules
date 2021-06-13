@@ -26,3 +26,9 @@
 [submodule "vim/pack/plugins/start/devicons"]
 	path = vim/pack/plugins/start/devicons
 	url = https://github.com/ryanoasis/vim-devicons
+[submodule "vim/pack/plugins/start/airline"]
+	path = vim/pack/plugins/start/airline
+	url = https://github.com/vim-airline/vim-airline
+[submodule "vim/pack/colors/start/airline-themes"]
+	path = vim/pack/colors/start/airline-themes
+	url = https://github.com/vim-airline/vim-airline
