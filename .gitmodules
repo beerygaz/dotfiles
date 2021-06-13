@@ -14,6 +14,7 @@
 [submodule "tmux/plugins/tpm"]
 	path = tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm
+<<<<<<< HEAD
 [submodule "vim/pack/plugins/start/nerdtree"]
 	path = vim/pack/plugins/start/nerdtree
 	url = https://github.com/scrooloose/nerdtree
@@ -32,3 +33,6 @@
 [submodule "vim/pack/colors/start/airline-themes"]
 	path = vim/pack/colors/start/airline-themes
 	url = https://github.com/vim-airline/vim-airline
+[submodule "dotbot-plugins/dotbot-brew"]
+	path = dotbot-plugins/dotbot-brew
+	url = https://github.com/d12frosted/dotbot-brew.git

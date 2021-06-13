@@ -38,6 +38,9 @@
     - ~/.tmux
     - ~/.vim/undo-history
 
+- brew:
+    - fasd
+
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
   -
