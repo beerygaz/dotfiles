@@ -6,10 +6,18 @@ CONFIG="install.conf.yaml"
 DOTBOT_DIR="dotbot"
 DOTBOT_BIN="bin/dotbot"
 BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-PLUGIN_DIR="${BASEDIR}/dotbot-plugins/"
+PLUGIN_DIR="${BASEDIR}/dotbot-plugins"
 
 cd "${BASEDIR}"
 git -C "${DOTBOT_DIR}" submodule sync --quiet --recursive
 git submodule update --init --recursive "${DOTBOT_DIR}"
 
-"${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" --plugin-dir "${PLUGIN_DIR}/dotbot-git" --plugin-dir "{$PLUGin_DIR}/dotbot_plugin_aptget" -c "${CONFIG}" "${@}"
+if [[ "$OSTYPE" == "linux-gnu" ]]; then
+	"${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" --plugin-dir "${PLUGIN_DIR}/dotbot-git" --plugin-dir "{$PLUGin_DIR}/dotbot_plugin_aptget" -c "${CONFIG}" "${@}"
+elif [[ "$OSTYPE" == "darwin"* ]]; then
+  	"${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" --plugin-dir "${PLUGIN_DIR}/dotbot-brew" --plugin-dir "${PLUGIN_DIR}/dotbot-git" -c "${CONFIG}" "${@}"
+
+echo ok
+fi
+
+
