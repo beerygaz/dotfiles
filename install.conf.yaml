@@ -40,6 +40,7 @@
 
 - brew:
     - fasd
+    - bat
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
