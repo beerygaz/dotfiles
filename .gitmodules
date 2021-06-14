@@ -22,7 +22,7 @@
 	url = https://github.com/Xuyuanp/nerdtree-git-plugin
 [submodule "vim/pack/colors/start/one"]
 	path = vim/pack/colors/start/one
-	url = https://github.com/rakr/vim-one.git
+	url = https://github.com/ryanoasis/vim-devicons
 [submodule "vim/pack/plugins/start/devicons"]
 	path = vim/pack/plugins/start/devicons
 	url = https://github.com/ryanoasis/vim-devicons
