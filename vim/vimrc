@@ -35,8 +35,8 @@ set number
 
 " ignore whitespace in diff mode
 if &diff
-    set diffopt-=internal
-    set diffopt+=iwhite
+	set diffopt-=internal
+	set diffopt+=iwhite
 endif
 
 " Be able to arrow key and backspace across newlines
@@ -48,9 +48,9 @@ set laststatus=1
 
 " remember last cursor position
 autocmd BufReadPost *
-	 \ if line("'\"") > 0 && line("'\"") <= line("$") |
-	 \  exe "normal g`\"" |
-	 \ endif
+			\ if line("'\"") > 0 && line("'\"") <= line("$") |
+			\  exe "normal g`\"" |
+			\ endif
 
 " show '>   ' at the beginning of lines that are automatically wrapped
 set showbreak=>\ \ \
@@ -114,3 +114,7 @@ filetype plugin indent on
 
 " Add json syntax highlighting
 au BufNewFile,BufRead *.json set ft=json syntax=javascript
+
+" Start NERDTree when Vim is started without file arguments.
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists('s:std_in') | NERDTree | endif
