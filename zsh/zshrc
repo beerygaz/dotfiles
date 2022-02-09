@@ -19,14 +19,14 @@ zstyle ':completion:*' list-colors ''
 # End of lines added by compinstall
 POWERLEVEL9K_MODE='nerdfont-complete'
 #Load Zplugin
-source ~/.zinit/bin/zinit.zsh
+source ~/.zinit/zinit.zsh
 source ~/.dotfiles/zsh/aliases.zsh
 
 EDITOR=vim
 
 #Log Zplugin Plugins
 zinit load zsh-users/zsh-autosuggestions
-zinit load zdharma/fast-syntax-highlighting
+zinit light zdharma-continuum/fast-syntax-highlighting
 zinit ice depth=1; zinit light romkatv/powerlevel10k 
 zinit snippet OMZP::common-aliases
 zinit snippet OMZP::sudo
