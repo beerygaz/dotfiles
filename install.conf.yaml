@@ -32,7 +32,6 @@
       create: true
       force: true
 
-
 - create:
     - ~/downloads
     - ~/.tmux

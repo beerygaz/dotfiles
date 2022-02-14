@@ -13,7 +13,7 @@ git -C "${DOTBOT_DIR}" submodule sync --quiet --recursive
 git submodule update --init --recursive "${DOTBOT_DIR}"
 
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
-	"${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" --plugin-dir "${PLUGIN_DIR}/dotbot-git" --plugin-dir "{$PLUGin_DIR}/dotbot_plugin_aptget" -c "${CONFIG}" "${@}"
+	"${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" --plugin-dir "${PLUGIN_DIR}/dotbot-git" --plugin-dir "{$PLUGIN_DIR}/apt-get" -c "${CONFIG}" "${@}"
 elif [[ "$OSTYPE" == "darwin"* ]]; then
   	"${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" --plugin-dir "${PLUGIN_DIR}/dotbot-brew" --plugin-dir "${PLUGIN_DIR}/dotbot-git" -c "${CONFIG}" "${@}"
 
