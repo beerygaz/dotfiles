@@ -1,1 +1,2 @@
-- apt-get: [multitail, zsh]
+- sudo: 
+  - apt-get: [multitail, zsh, bat, tmux, fasd, htop, ntop]

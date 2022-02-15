@@ -41,3 +41,6 @@
 [submodule "zsh/zinit"]
 	path = zsh/zinit
 	url = https://github.com/zdharma-continuum/zinit.git
+[submodule "dotbot-plugins/dotbot-sudo"]
+	path = dotbot-plugins/dotbot-sudo
+	url = https://github.com/DrDynamic/dotbot-sudo.git

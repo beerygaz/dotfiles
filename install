@@ -2,22 +2,30 @@
 
 set -e
 
-CONFIG="install.conf.yaml"
+DEFAULT_CONFIG_PREFIX="default"
 DOTBOT_DIR="dotbot"
 DOTBOT_BIN="bin/dotbot"
 BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PLUGIN_DIR="${BASEDIR}/dotbot-plugins"
+CONFIG_SUFFIX=".conf.yaml"
 
 cd "${BASEDIR}"
 git -C "${DOTBOT_DIR}" submodule sync --quiet --recursive
 git submodule update --init --recursive "${DOTBOT_DIR}"
-
-if [[ "$OSTYPE" == "linux-gnu" ]]; then
-	"${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" --plugin-dir "${PLUGIN_DIR}/dotbot-git" --plugin-dir "{$PLUGIN_DIR}/apt-get" -c "${CONFIG}" "${@}"
-elif [[ "$OSTYPE" == "darwin"* ]]; then
-  	"${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" --plugin-dir "${PLUGIN_DIR}/dotbot-brew" --plugin-dir "${PLUGIN_DIR}/dotbot-git" -c "${CONFIG}" "${@}"
-
-echo ok
-fi
+for conf in ${DEFAULT_CONFIG_PREFIX} ${@}; do
+	    "${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" \
+	    	    --plugin-dir "${PLUGIN_DIR}/dotbot-brew" \
+	    	    --plugin-dir "{$PLUGIN_DIR}/apt-get"\
+	    	    --plugin-dir "{$PLUGIN_DIR}/dotbot-git"\
+	    	    --plugin-dir "{$PLUGIN_DIR}/dotbot-sudo"\
+	    	    -c "${conf}${CONFIG_SUFFIX}"
+done
+#if [[ "$OSTYPE" == "linux-gnu" ]]; then
+#	"${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" --plugin-dir "${PLUGIN_DIR}/dotbot-git" --plugin-dir "{$PLUGIN_DIR}/apt-get" -c "${CONFIG}" "${@}"
+#elif [[ "$OSTYPE" == "darwin"* ]]; then
+#  	"${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" --plugin-dir "${PLUGIN_DIR}/dotbot-brew" --plugin-dir "${PLUGIN_DIR}/dotbot-git" -c "${CONFIG}" "${@}"
+#
+#echo ok
+#fi
 
 
