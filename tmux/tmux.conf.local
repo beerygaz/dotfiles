@@ -6,6 +6,12 @@
 
 set -g prefix `
 bind-key ` send-prefix
+
+
+# -- Windows ------
+bind | split-window -h
+bind - split-window -v
+
 # -- navigation ----------------------------------------------------------------
 
 # if you're running tmux within iTerm2
@@ -340,7 +346,7 @@ tmux_conf_copy_to_os_clipboard=false
 
 
 # move status line to top
-#set -g status-position top
+set -g status-position top
 
 # -- tpm -----------------------------------------------------------------------
 

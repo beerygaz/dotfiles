@@ -28,6 +28,7 @@
     - ~/.vim/undo-history
 
 - brew:
+    - neofetch
     - fasd
     - bat
 
