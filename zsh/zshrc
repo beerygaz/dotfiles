@@ -31,6 +31,7 @@ zinit light zdharma-continuum/fast-syntax-highlighting
 zinit ice depth=1; zinit light romkatv/powerlevel10k 
 zinit snippet OMZP::common-aliases
 zinit snippet OMZP::sudo
+zinit snippet OMZP::fasd
 zinit snippet OMZP::colored-man-pages
 
 
