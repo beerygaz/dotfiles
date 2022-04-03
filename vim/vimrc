@@ -103,7 +103,8 @@ set noshowmode  " to get rid of thing like --INSERT--
 set noshowcmd  " to get rid of display of last command
 set shortmess+=F  " to get rid of the file name displayed in the command line bar
 set background=dark "uncomment this if your terminal has a dark background
-colorscheme default
+let g:airline_powerline_fonts = 1
+colorscheme desert
 
 """""""""""""""""""""
 " Language-Specific "
