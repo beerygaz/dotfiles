@@ -52,8 +52,7 @@ zstyle ':completion:*' menu select
 zinit cdreplay -q
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
-
-if command -v pyenv 1>/dev/null 2>&1; then
+export PYENV_ROOT="$HOME/.pyenv"
+if command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"; then
   eval "$(pyenv init -)"
 fi
