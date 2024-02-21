@@ -5,9 +5,6 @@
 [submodule "dotbot-plugins/dotbot-git"]
 	path = dotbot-plugins/dotbot-git
 	url = https://github.com/DrDynamic/dotbot-git.git
-[submodule "dotbot-plugins/dotbot_plugin_aptget"]
-	path = dotbot-plugins/dotbot_plugin_aptget
-	url = https://github.com/dein0s/dotbot_plugin_aptget.git
 [submodule "zsh/zinit/bin"]
 	path = zsh/zinit/bin
 	url = https://github.com/zdharma/zinit.git
@@ -35,9 +32,6 @@
 [submodule "dotbot-plugins/dotbot-brew"]
 	path = dotbot-plugins/dotbot-brew
 	url = https://github.com/d12frosted/dotbot-brew.git
-[submodule "dotbot-plugins/apt-get"]
-	path = dotbot-plugins/apt-get
-	url = https://github.com/rubenvereecken/dotbot-apt-get
 [submodule "zsh/zinit"]
 	path = zsh/zinit
 	url = https://github.com/zdharma-continuum/zinit.git
