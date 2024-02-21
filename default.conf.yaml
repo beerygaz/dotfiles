@@ -27,21 +27,21 @@
     - ~/.tmux
     - ~/.vim/undo-history
 
-- brew:
-    - neofetch
-    - fasd
-    - bat
+#- brew:
+#    - neofetch
+#    - fasd
+#    - bat
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
-  - command: ./git/set-gitconfig.sh
-    description: Configuring Git
-    stdout: true
-    quiet: false
+#  - command: ./git/set-gitconfig.sh
+#    description: Configuring Git
+#    stdout: true
+#    quiet: false
 
-  - command: ./zsh/set-shell.sh
-    description: "Making zsh the default shell"
-    stdin: true
-    stderr: true
-    stdout: true
+#  - command: ./zsh/set-shell.sh
+#    description: "Making zsh the default shell"
+#    stdin: true
+#    stderr: true
+#    stdout: true
 

@@ -2,7 +2,7 @@
 
 set -e
 
-DEFAULT_CONFIG_PREFIX="default"
+DEFAULT_CONFIG_PREFIX=("default" "packages")
 DOTBOT_DIR="dotbot"
 DOTBOT_BIN="bin/dotbot"
 BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
@@ -12,12 +12,14 @@ CONFIG_SUFFIX=".conf.yaml"
 cd "${BASEDIR}"
 git -C "${DOTBOT_DIR}" submodule sync --quiet --recursive
 git submodule update --init --recursive "${DOTBOT_DIR}"
+echo "Found ${DEFAULT_CONFIG_PREFIX}"
 for conf in ${DEFAULT_CONFIG_PREFIX} ${@}; do
+	    echo "Executing ${conf}${CONFIG_SUFFIX}"
 	    "${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" \
-	    	    --plugin-dir "${PLUGIN_DIR}/dotbot-brew" \
-	    	    --plugin-dir "{$PLUGIN_DIR}/dotbot-apt"\
-	    	    --plugin-dir "{$PLUGIN_DIR}/dotbot-git"\
-	    	    --plugin-dir "{$PLUGIN_DIR}/dotbot-sudo"\
+	    	    --plugin-dir ${PLUGIN_DIR}/dotbot-brew \
+	    	    --plugin-dir ${PLUGIN_DIR}/dotbot-apt\
+	    	    --plugin-dir ${PLUGIN_DIR}/dotbot-git\
+	    	    --plugin-dir ${PLUGIN_DIR}/dotbot-sudo\
 	    	    -c "${conf}${CONFIG_SUFFIX}"
 done
 #if [[ "$OSTYPE" == "linux-gnu" ]]; then
