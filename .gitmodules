@@ -38,3 +38,6 @@
 [submodule "dotbot-plugins/dotbot-sudo"]
 	path = dotbot-plugins/dotbot-sudo
 	url = https://github.com/DrDynamic/dotbot-sudo.git
+[submodule "dotbot-plugins/dotbot-apt"]
+	path = dotbot-plugins/dotbot-apt
+	url = https://github.com/bryant1410/dotbot-apt

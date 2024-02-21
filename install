@@ -15,7 +15,7 @@ git submodule update --init --recursive "${DOTBOT_DIR}"
 for conf in ${DEFAULT_CONFIG_PREFIX} ${@}; do
 	    "${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" \
 	    	    --plugin-dir "${PLUGIN_DIR}/dotbot-brew" \
-	    	    --plugin-dir "{$PLUGIN_DIR}/apt-get"\
+	    	    --plugin-dir "{$PLUGIN_DIR}/dotbot-apt"\
 	    	    --plugin-dir "{$PLUGIN_DIR}/dotbot-git"\
 	    	    --plugin-dir "{$PLUGIN_DIR}/dotbot-sudo"\
 	    	    -c "${conf}${CONFIG_SUFFIX}"
