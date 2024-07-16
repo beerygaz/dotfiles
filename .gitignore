@@ -1,4 +1,5 @@
 zsh/zinit/*
 dotbot/*
+dotbot-plugins/*
 tmux/plugins
 vim/pack/*
