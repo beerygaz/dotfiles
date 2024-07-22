@@ -10,4 +10,4 @@ if [[ $OSTYPE == darwin* ]]; then
 else
   alias cat=batcat
 fi
-
+alias dps='docker ps --format "table {{.Image}}\t{{.Ports}}\t{{.Names}}"'
