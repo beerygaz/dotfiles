@@ -44,3 +44,6 @@
 [submodule "vim/pack/plugins/start/vim-alloy"]
 	path = vim/pack/plugins/start/vim-alloy
 	url = https://github.com/grafana/vim-alloy.git
+[submodule "vim/pack/plugins/start/devicons"]
+	path = vim/pack/plugins/start/devicons
+	url = https://github.com/ryanoasis/vim-devicons.git
