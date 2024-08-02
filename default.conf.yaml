@@ -10,7 +10,7 @@
     ~/.zshrc: zsh/zshrc
     ~/.zinit: zsh/zinit
     ~/.p10k.zsh: zsh/p10k.zsh
-    ~/.tmux.conf: tmux/tmux.conf
+    ~/.tmux.conf: tmux/dottmux/.tmux.conf
     ~/.tmux.conf.local: tmux/tmux.conf.local
     ~/.vim: vim
     ~/.vimrc: vim/vimrc

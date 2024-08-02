@@ -47,3 +47,9 @@
 [submodule "vim/pack/plugins/start/vim-indent-guides"]
 	path = vim/pack/plugins/start/vim-indent-guides
 	url = https://github.com/preservim/vim-indent-guides.git
+[submodule "tmux/plugins/tpm"]
+	path = tmux/plugins/tpm
+	url = https://github.com/tmux-plugins/tpm
+[submodule "tmux/dottmux"]
+	path = tmux/dottmux
+	url = https://github.com/gpakosz/.tmux
