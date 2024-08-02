@@ -102,10 +102,11 @@ syntax enable
 set noshowmode  " to get rid of thing like --INSERT--
 set noshowcmd  " to get rid of display of last command
 set shortmess+=F  " to get rid of the file name displayed in the command line bar
-set background=dark "uncomment this if your terminal has a dark background
 let g:airline_powerline_fonts = 1
-let g:airline_theme='owo'
-colorscheme desert
+let g:airline_theme='one'
+colorscheme one
+let g:one_allow_italics = 1 " I love italic for comments
+set background=dark "uncomment this if your terminal has a dark background
 
 """""""""""""""""""""
 " Language-Specific "
