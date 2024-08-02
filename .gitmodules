@@ -23,15 +23,12 @@
 [submodule "vim/pack/plugins/start/devicons"]
 	path = vim/pack/plugins/start/devicons
 	url = https://github.com/ryanoasis/vim-devicons
-[submodule "vim/pack/plugins/start/vim-alloy"]
-	path = vim/pack/plugins/start/vim-alloy
-	url = https://github.com/grafana/vim-alloy.git
 [submodule "vim/pack/plugins/start/airline"]
 	path = vim/pack/plugins/start/airline
 	url = https://github.com/vim-airline/vim-airline
 [submodule "vim/pack/colors/start/airline-themes"]
 	path = vim/pack/colors/start/airline-themes
-	url = https://github.com/vim-airline/vim-airline
+	url = https://github.com/vim-airline/vim-airline-themes.git
 [submodule "dotbot-plugins/dotbot-brew"]
 	path = dotbot-plugins/dotbot-brew
 	url = https://github.com/d12frosted/dotbot-brew.git
@@ -44,3 +41,6 @@
 [submodule "dotbot-plugins/dotbot-apt"]
 	path = dotbot-plugins/dotbot-apt
 	url = https://github.com/bryant1410/dotbot-apt
+[submodule "vim/pack/plugins/start/vim-alloy"]
+	path = vim/pack/plugins/start/vim-alloy
+	url = https://github.com/grafana/vim-alloy.git
