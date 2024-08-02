@@ -11,18 +11,6 @@
 [submodule "tmux/plugins/tpm"]
 	path = tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm
-[submodule "vim/pack/plugins/start/nerdtree"]
-	path = vim/pack/plugins/start/nerdtree
-	url = https://github.com/scrooloose/nerdtree
-[submodule "vim/pack/plugins/start/nerdtree-git-plugin"]
-	path = vim/pack/plugins/start/nerdtree-git-plugin
-	url = https://github.com/Xuyuanp/nerdtree-git-plugin
-[submodule "vim/pack/plugins/start/devicons"]
-	path = vim/pack/plugins/start/devicons
-	url = https://github.com/ryanoasis/vim-devicons
-[submodule "vim/pack/plugins/start/airline"]
-	path = vim/pack/plugins/start/airline
-	url = https://github.com/vim-airline/vim-airline
 [submodule "dotbot-plugins/dotbot-brew"]
 	path = dotbot-plugins/dotbot-brew
 	url = https://github.com/d12frosted/dotbot-brew.git
@@ -35,15 +23,3 @@
 [submodule "dotbot-plugins/dotbot-apt"]
 	path = dotbot-plugins/dotbot-apt
 	url = https://github.com/bryant1410/dotbot-apt
-[submodule "vim/pack/plugins/start/vim-alloy"]
-	path = vim/pack/plugins/start/vim-alloy
-	url = https://github.com/grafana/vim-alloy.git
-[submodule "vim/pack/dist/start/vim-airline-themes"]
-	path = vim/pack/dist/start/vim-airline-themes
-	url = https://github.com/vim-airline/vim-airline-themes
-[submodule "vim/pack/colors/start/rose-pine"]
-	path = vim/pack/colors/start/rose-pine
-	url = https://github.com/rose-pine/neovim.git
-[submodule "vim/pack/colors/start/tokyodark"]
-	path = vim/pack/colors/start/tokyodark
-	url = https://github.com/tiagovla/tokyodark.nvim.git
