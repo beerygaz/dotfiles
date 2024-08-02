@@ -8,9 +8,6 @@
 [submodule "zsh/zinit/bin"]
 	path = zsh/zinit/bin
 	url = https://github.com/zdharma/zinit.git
-[submodule "tmux/plugins/tpm"]
-	path = tmux/plugins/tpm
-	url = https://github.com/tmux-plugins/tpm
 [submodule "dotbot-plugins/dotbot-brew"]
 	path = dotbot-plugins/dotbot-brew
 	url = https://github.com/d12frosted/dotbot-brew.git
