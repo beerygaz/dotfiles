@@ -38,3 +38,9 @@
 [submodule "vim/pack/plugins/start/nerdtree-git-plugin"]
 	path = vim/pack/plugins/start/nerdtree-git-plugin
 	url = https://github.com/Xuyuanp/nerdtree-git-plugin
+[submodule "vim/pack/colors/start/one"]
+	path = vim/pack/colors/start/one
+	url = https://github.com/rakr/vim-one.git
+[submodule "vim/pack/plugins/start/vim-alloy"]
+	path = vim/pack/plugins/start/vim-alloy
+	url = https://github.com/grafana/vim-alloy.git
