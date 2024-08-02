@@ -47,3 +47,6 @@
 [submodule "vim/pack/plugins/start/devicons"]
 	path = vim/pack/plugins/start/devicons
 	url = https://github.com/ryanoasis/vim-devicons.git
+[submodule "vim/pack/plugins/start/vim-indent-guides"]
+	path = vim/pack/plugins/start/vim-indent-guides
+	url = https://github.com/preservim/vim-indent-guides.git
