@@ -23,9 +23,6 @@
 [submodule "vim/pack/plugins/start/airline"]
 	path = vim/pack/plugins/start/airline
 	url = https://github.com/vim-airline/vim-airline
-[submodule "vim/pack/plugins/start/airline-themes"]
-	path = vim/pack/plugins/start/airline-themes
-	url = https://github.com/vim-airline/vim-airline-themes.git
 [submodule "dotbot-plugins/dotbot-brew"]
 	path = dotbot-plugins/dotbot-brew
 	url = https://github.com/d12frosted/dotbot-brew.git
@@ -41,3 +38,15 @@
 [submodule "vim/pack/plugins/start/vim-alloy"]
 	path = vim/pack/plugins/start/vim-alloy
 	url = https://github.com/grafana/vim-alloy.git
+[submodule "vim/pack/colors/start/one"]
+	path = vim/pack/colors/start/one
+	url = https://github.com/rakr/vim-one.git
+[submodule "vim/pack/dist/start/vim-airline-themes"]
+	path = vim/pack/dist/start/vim-airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes
+[submodule "vim/pack/colors/start/rose-pine"]
+	path = vim/pack/colors/start/rose-pine
+	url = https://github.com/rose-pine/neovim.git
+[submodule "vim/pack/colors/start/tokyodark"]
+	path = vim/pack/colors/start/tokyodark
+	url = https://github.com/tiagovla/tokyodark.nvim.git
