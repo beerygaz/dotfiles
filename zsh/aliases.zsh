@@ -1,5 +1,5 @@
 ## Colorize the ls output ##
-alias ls='ls -FHG'
+alias ls='ls -FHG --color=auto'
 alias vimalias='vim ~/.dotfiles/zsh/aliases.zsh;source ~/.dotfiles/zsh/aliases.zsh'
 alias logsys='multitail /var/log/syslog'
 alias 'az al'='az account list -o table'
