@@ -8,9 +8,7 @@
 [submodule "dotbot-plugins/dotbot-brew"]
 	path = dotbot-plugins/dotbot-brew
 	url = https://github.com/d12frosted/dotbot-brew.git
-[submodule "zsh/zinit"]
-	path = zsh/zinit
-	url = https://github.com/zdharma-continuum/zinit.git
+
 [submodule "dotbot-plugins/dotbot-sudo"]
 	path = dotbot-plugins/dotbot-sudo
 	url = https://github.com/DrDynamic/dotbot-sudo.git
@@ -59,3 +57,6 @@
 [submodule "zsh/plugins/zsh-users---zsh-autosuggestions"]
 	path = zsh/plugins/zsh-users---zsh-autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions
+[submodule "zsh/zinit"]
+	path = zsh/zinit
+	url = https://github.com/zdharma-continuum/zinit.git
