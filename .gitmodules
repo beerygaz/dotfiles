@@ -56,9 +56,6 @@
 [submodule "zsh/plugins/romkatv---powerlevel10k"]
 	path = zsh/plugins/romkatv---powerlevel10k
 	url = https://github.com/romkatv/powerlevel10k
-[submodule "zsh/plugins/trapd00r---LS_COLORS"]
-	path = zsh/plugins/trapd00r---LS_COLORS
-	url = https://github.com/trapd00r/LS_COLORS
 [submodule "zsh/plugins/zdharma-continuum---fast-syntax-highlighting"]
 	path = zsh/plugins/zdharma-continuum---fast-syntax-highlighting
 	url = https://github.com/zdharma-continuum/fast-syntax-highlighting

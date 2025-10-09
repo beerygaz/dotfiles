@@ -28,9 +28,12 @@ source ~/.dotfiles/zsh/aliases.zsh
 EDITOR=vim
 
 #Log Zplugin Plugins
-zinit load zsh-users/zsh-autosuggestions
-zinit light zdharma-continuum/fast-syntax-highlighting
-zinit ice depth=1; zinit light romkatv/powerlevel10k 
+zinit ice depth=1
+zinit load $HOME/.dotfiles/zsh/plugins/romkatv---powerlevel10k
+zinit ice depth=1
+zinit load $HOME/.dotfiles/zsh/plugins/zdharma-continuum---fast-syntax-highlighting
+zinit ice depth=1
+zinit load $HOME/.dotfiles/zsh/plugins/zsh-users---zsh-autosuggestions
 zinit snippet OMZP::common-aliases
 zinit snippet OMZP::sudo
 zinit snippet OMZP::fasd
@@ -79,7 +82,8 @@ if command -v "$PYENV_ROOT/bin/pyenv" 2>&1; then
 fi
 export SSH_AUTH_SOCK="$HOME/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"
 # Created by `pipx` on 2025-04-01 06:12:56
-export PATH="$PATH:/Users/gaz/.local/bin"
+export PATH="$PATH:$HOME/.local/bin"
 
 # Created by `pipx` on 2025-07-02 04:59:19
-export PATH="$PATH:/Users/gaz/Library/Python/3.9/bin"
+export PATH="$PATH:$HOME/Library/Python/3.9/bin"
+
