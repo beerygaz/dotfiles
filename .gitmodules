@@ -53,3 +53,15 @@
 [submodule "tmux/dottmux"]
 	path = tmux/dottmux
 	url = https://github.com/gpakosz/.tmux
+[submodule "zsh/plugins/romkatv---powerlevel10k"]
+	path = zsh/plugins/romkatv---powerlevel10k
+	url = https://github.com/romkatv/powerlevel10k
+[submodule "zsh/plugins/trapd00r---LS_COLORS"]
+	path = zsh/plugins/trapd00r---LS_COLORS
+	url = https://github.com/trapd00r/LS_COLORS
+[submodule "zsh/plugins/zdharma-continuum---fast-syntax-highlighting"]
+	path = zsh/plugins/zdharma-continuum---fast-syntax-highlighting
+	url = https://github.com/zdharma-continuum/fast-syntax-highlighting
+[submodule "zsh/plugins/zsh-users---zsh-autosuggestions"]
+	path = zsh/plugins/zsh-users---zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions
