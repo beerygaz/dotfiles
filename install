@@ -28,12 +28,6 @@ for conf in ${DEFAULT_CONFIG_PREFIX} ${@}; do
         "${PLUGIN_ARGS[@]}" \
         -c "${conf}${CONFIG_SUFFIX}"
 done
-#if [[ "$OSTYPE" == "linux-gnu" ]]; then
-#	"${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" --plugin-dir "${PLUGIN_DIR}/dotbot-git" --plugin-dir "{$PLUGIN_DIR}/apt-get" -c "${CONFIG}" "${@}"
-#elif [[ "$OSTYPE" == "darwin"* ]]; then
-#  	"${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" --plugin-dir "${PLUGIN_DIR}/dotbot-brew" --plugin-dir "${PLUGIN_DIR}/dotbot-git" -c "${CONFIG}" "${@}"
-#
-#echo ok
-#fi
+
 
 
