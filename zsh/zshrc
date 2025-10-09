@@ -61,10 +61,14 @@ bindkey "^[[3;3~" kill-word
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-zinit ice atclone"dircolors -b LS_COLORS > clrs.zsh" \
-    atpull'%atclone' pick"clrs.zsh" nocompile'!' \
-    atload'zstyle ":completion:*" list-colors “${(s.:.)LS_COLORS}”'
-zinit light trapd00r/LS_COLORS
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  export LSCOLORS="GxFxCxDxBxegedabagaced"
+else
+  zinit ice atclone"dircolors -b LS_COLORS > clrs.zsh" \
+      atpull'%atclone' pick"clrs.zsh" nocompile'!' \
+      atload'zstyle ":completion:*" list-colors “${(s.:.)LS_COLORS}”'
+  zinit light trapd00r/LS_COLORS
+fi
 
 autoload -Uz compinit
 compinit
@@ -86,4 +90,7 @@ export PATH="$PATH:$HOME/.local/bin"
 
 # Created by `pipx` on 2025-07-02 04:59:19
 export PATH="$PATH:$HOME/Library/Python/3.9/bin"
+
+
+
 

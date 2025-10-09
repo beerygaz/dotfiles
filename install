@@ -13,14 +13,20 @@ cd "${BASEDIR}"
 git -C "${DOTBOT_DIR}" submodule sync --quiet --recursive
 git submodule update --init --recursive "${DOTBOT_DIR}"
 echo "Found ${DEFAULT_CONFIG_PREFIX}"
+PLUGIN_ARGS=(
+    --plugin-dir "${PLUGIN_DIR}/dotbot-apt"
+    --plugin-dir "${PLUGIN_DIR}/dotbot-git"
+    --plugin-dir "${PLUGIN_DIR}/dotbot-sudo"
+)
+if [[ "$OSTYPE" == "darwin"* ]]; then
+    PLUGIN_ARGS+=(--plugin-dir "${PLUGIN_DIR}/dotbot-brew")
+fi
+
 for conf in ${DEFAULT_CONFIG_PREFIX} ${@}; do
-	    echo "Executing ${conf}${CONFIG_SUFFIX}"
-	    "${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" \
-	    	    --plugin-dir ${PLUGIN_DIR}/dotbot-brew \
-	    	    --plugin-dir ${PLUGIN_DIR}/dotbot-apt\
-	    	    --plugin-dir ${PLUGIN_DIR}/dotbot-git\
-	    	    --plugin-dir ${PLUGIN_DIR}/dotbot-sudo\
-	    	    -c "${conf}${CONFIG_SUFFIX}"
+    echo "Executing ${conf}${CONFIG_SUFFIX}"
+    "${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" \
+        "${PLUGIN_ARGS[@]}" \
+        -c "${conf}${CONFIG_SUFFIX}"
 done
 #if [[ "$OSTYPE" == "linux-gnu" ]]; then
 #	"${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" --plugin-dir "${PLUGIN_DIR}/dotbot-git" --plugin-dir "{$PLUGIN_DIR}/apt-get" -c "${CONFIG}" "${@}"
