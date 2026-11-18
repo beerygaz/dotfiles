@@ -17,8 +17,8 @@
     ~/.tmux/plugins: 
       path: tmux/plugins
       create: true
-    ~/.config/neofetch/config.conf:
-      path: neofetch/config.conf
+    ~/.config/fastfetch/config.jsonc:
+      path: fastfetch/config.jsonc
       create: true
       force: true
 
@@ -28,7 +28,7 @@
     - ~/.vim/undo-history
 
 #- brew:
-#    - neofetch
+#    - fastfetch
 #    - fasd
 #    - bat
 
