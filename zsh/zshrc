@@ -101,7 +101,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"
 
 # OpenClaw Completion
-source "/Users/gaz/.openclaw/completions/openclaw.zsh"
+[ -s "$HOME/.openclaw/completions/openclaw.zsh" ] && source "$HOME/.openclaw/completions/openclaw.zsh"
 
 # bun completions
 [ -s "/Users/gaz/.bun/_bun" ] && source "/Users/gaz/.bun/_bun"
